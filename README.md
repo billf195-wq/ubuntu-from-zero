@@ -1,5 +1,8 @@
 # Ubuntu From Zero
 
+**Quick share links (email-ready):** [LINKS.md](LINKS.md)
+
+
 Beginner → novice Ubuntu tutorial for Windows switchers (Ubuntu 24.04 / 26.04 GNOME).
 
 **Two deliverables in this folder:**
