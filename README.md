@@ -99,3 +99,11 @@ Placeholders ship so the HTML looks complete. Capture real shots on the GTR usin
 ## Credit
 
 Developed by Bill Foster.
+
+## Support / donations
+
+Optional donations to support development are welcome. This project is free to use.
+
+- *(Add your preferred link here — GitHub Sponsors, Buy Me a Coffee, PayPal, etc.)*
+
+Developed by Bill Foster.
