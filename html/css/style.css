@@ -397,3 +397,6 @@ ul.checklist li::before {
 .sidebar-footer {
   line-height: 1.45;
 }
+
+.support-links{margin-top:.75rem;font-size:.95rem}
+.support-links a{color:var(--accent,#E95420);font-weight:600}

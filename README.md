@@ -102,8 +102,11 @@ Developed by Bill Foster.
 
 ## Support / donations
 
-Optional donations to support development are welcome. This project is free to use.
+Optional — thank you if you tip via PayPal:
 
-- *(Add your preferred link here — GitHub Sponsors, Buy Me a Coffee, PayPal, etc.)*
+[Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=billf195%40gmail.com&currency_code=USD&item_name=Support%20Bill%20Foster%20apps)
 
-Developed by Bill Foster.
+## Related
+
+- [Total IPTV Pro](https://github.com/billf195-wq/total-iptv-pro) — Android TV/phone + Desktop player (also by Bill Foster)
+
