@@ -104,7 +104,7 @@ Developed by Bill Foster.
 
 Optional — thank you if you tip via PayPal:
 
-[Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=billf195%40gmail.com&currency_code=USD&item_name=Support%20Bill%20Foster%20apps)
+[Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=billf195%40yahoo.com&currency_code=USD&item_name=Support%20Bill%20Foster%20apps)
 
 ## Related
 
