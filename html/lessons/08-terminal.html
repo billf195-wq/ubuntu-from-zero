@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal basics — Ubuntu From Zero</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Ubuntu <span>From Zero</span></h1>
+    <p>Beginner → novice tutorial</p>
+    <p class="byline">Developed by Bill Foster</p>
+  </div>
+  <div class="search-wrap">
+    <input type="search" id="lesson-search" placeholder="Search lessons…" aria-label="Search lessons">
+  </div>
+  <nav class="nav">
+    <div class="nav-level">Beginner</div>
+    <a class="" data-id="01-welcome" href="01-welcome.html">1. Welcome &amp; what Ubuntu is</a>
+    <a class="" data-id="02-desktop" href="02-desktop.html">2. Desktop tour</a>
+    <a class="" data-id="03-files" href="03-files.html">3. Files app &amp; folders</a>
+    <a class="" data-id="04-install-apps" href="04-install-apps.html">4. Installing apps</a>
+    <a class="" data-id="05-updates" href="05-updates.html">5. Updates</a>
+    <a class="" data-id="06-wifi-bt-display" href="06-wifi-bt-display.html">6. Wi‑Fi, Bluetooth, displays</a>
+    <a class="" data-id="07-screenshots" href="07-screenshots.html">7. Screenshots, clipboard, shortcuts</a>
+    <div class="nav-level">Getting comfortable</div>
+    <a class="active" data-id="08-terminal" href="08-terminal.html">8. Terminal basics</a>
+    <a class="" data-id="09-sudo" href="09-sudo.html">9. Safe vs sudo / password prompts</a>
+    <a class="" data-id="10-browser-email" href="10-browser-email.html">10. Browser, email, printers</a>
+    <a class="" data-id="11-backups" href="11-backups.html">11. Backups</a>
+    <a class="" data-id="12-troubleshoot" href="12-troubleshoot.html">12. Troubleshooting checklist</a>
+    <div class="nav-level">Novice</div>
+    <a class="" data-id="13-package-types" href="13-package-types.html">13. Flatpak vs apt vs Snap</a>
+    <a class="" data-id="14-gaming" href="14-gaming.html">14. Steam + Proton / gaming intro</a>
+    <a class="" data-id="15-permissions" href="15-permissions.html">15. Permissions, users, Disks overview</a>
+    <a class="" data-id="16-customize" href="16-customize.html">16. Customizing look</a>
+    <a class="" data-id="17-next-steps" href="17-next-steps.html">17. Next steps / learning path</a>
+  </nav>
+  <div class="sidebar-footer">Developed by Bill Foster<br>Offline-friendly · relative paths<br>Progress saved in this browser</div>
+</aside>
+<main class="main">
+  <div class="top-actions">
+    <a class="btn-ghost btn" href="../index.html">Home</a>
+    <button type="button" class="btn-ghost btn" onclick="UFZ.toggleTheme()">Light / Dark</button>
+  </div>
+
+  <header class="lesson-header">
+    <div class="meta">
+      <span class="badge comfortable">Getting comfortable</span>
+      <span>Lesson 8 of 17</span>
+    </div>
+    <h1>Terminal basics</h1>
+    <p class="summary">pwd, ls, cd, and copy-paste — enough to follow guides without fear.</p>
+  </header>
+  <figure class="figure">
+    <img src="../../media/images/08-terminal.png" alt="Terminal basics">
+    <figcaption>Lesson cover — replace <code>media/images/08-terminal.png</code> with a GTR capture when ready.</figcaption>
+  </figure>
+  <figure class="figure">
+    <img src="../../media/images/terminal-window.png" alt="GNOME Terminal">
+    <figcaption>GNOME Terminal</figcaption>
+  </figure>
+  <figure class="figure">
+    <video controls preload="metadata" poster="../../media/videos/terminal-basics-poster.png">
+      <source src="../../media/videos/terminal-basics.webm" type="video/webm">
+      Your browser does not support video.
+    </video>
+    <figcaption>Terminal basics (placeholder)</figcaption>
+  </figure>
+  <h2>Steps</h2>
+  <ol class="steps">
+    <li>Open Terminal: Ctrl+Alt+T or search “Terminal”.</li>
+    <li>Type <code>pwd</code> and press Enter — print working directory (where you are).</li>
+    <li>Type <code>ls</code> — list files. Try <code>ls -la</code> for details and hidden files.</li>
+    <li>Type <code>cd Downloads</code> to enter Downloads (if it exists). <code>cd ..</code> goes up one folder. <code>cd</code> alone returns to Home.</li>
+    <li>Copy text from a guide: select → Ctrl+Shift+C in Terminal to copy; Ctrl+Shift+V to paste. Or use the right-click menu.</li>
+  </ol>
+  
+<pre><code>pwd
+ls
+ls -la
+cd Downloads
+cd ..
+cd</code></pre>
+<div class="tip"><strong>Tip</strong> Tab completion is magic: type the first letters of a folder name and press Tab. The shell fills in the rest when it is unique.</div>
+<div class="warn"><strong>Read before you run</strong> Never run a command you do not understand if it includes <code>rm -rf</code>, <code>dd</code>, or pipes to <code>sh</code> from a random website.</div>
+
+  <div class="mark-done">
+    <button type="button" class="btn" id="mark-done-btn" data-id="08-terminal" onclick="UFZ.markDone('08-terminal')">Mark lesson done</button>
+  </div>
+  <nav class="nav-lessons">
+    <a class="btn btn-ghost" href="07-screenshots.html">← 7. Screenshots, clipboard, shortcuts</a>
+    <a class="btn" href="09-sudo.html">9. Safe vs sudo / password prompts →</a>
+  </nav>
+
+</main>
+<script src="../js/app.js"></script>
+</body>
+</html>

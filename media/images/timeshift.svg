@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E95420;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)" rx="12"/>
+  <circle cx="80" cy="80" r="36" fill="#fff" opacity="0.15"/>
+  <circle cx="740" cy="390" r="50" fill="#fff" opacity="0.08"/>
+  <text x="40" y="215" fill="#ffffff" font-family="Ubuntu, Segoe UI, sans-serif" font-size="28" font-weight="600">Timeshift Backup</text>
+  <text x="40" y="253" fill="#ffffff" opacity="0.7" font-family="Ubuntu, Segoe UI, sans-serif" font-size="16">Placeholder — replace with GTR screenshot</text>
+  <text x="40" y="420" fill="#ffffff" opacity="0.45" font-family="monospace" font-size="12">timeshift.svg</text>
+</svg>

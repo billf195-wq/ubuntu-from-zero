@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Ubuntu From Zero</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Ubuntu <span>From Zero</span></h1>
+    <p>Beginner → novice tutorial</p>
+    <p class="byline">Developed by Bill Foster</p>
+  </div>
+  <div class="search-wrap">
+    <input type="search" id="lesson-search" placeholder="Search lessons…" aria-label="Search lessons">
+  </div>
+  <nav class="nav">
+    <div class="nav-level">Beginner</div>
+    <a class="" data-id="01-welcome" href="lessons/01-welcome.html">1. Welcome &amp; what Ubuntu is</a>
+    <a class="" data-id="02-desktop" href="lessons/02-desktop.html">2. Desktop tour</a>
+    <a class="" data-id="03-files" href="lessons/03-files.html">3. Files app &amp; folders</a>
+    <a class="" data-id="04-install-apps" href="lessons/04-install-apps.html">4. Installing apps</a>
+    <a class="" data-id="05-updates" href="lessons/05-updates.html">5. Updates</a>
+    <a class="" data-id="06-wifi-bt-display" href="lessons/06-wifi-bt-display.html">6. Wi‑Fi, Bluetooth, displays</a>
+    <a class="" data-id="07-screenshots" href="lessons/07-screenshots.html">7. Screenshots, clipboard, shortcuts</a>
+    <div class="nav-level">Getting comfortable</div>
+    <a class="" data-id="08-terminal" href="lessons/08-terminal.html">8. Terminal basics</a>
+    <a class="" data-id="09-sudo" href="lessons/09-sudo.html">9. Safe vs sudo / password prompts</a>
+    <a class="" data-id="10-browser-email" href="lessons/10-browser-email.html">10. Browser, email, printers</a>
+    <a class="" data-id="11-backups" href="lessons/11-backups.html">11. Backups</a>
+    <a class="" data-id="12-troubleshoot" href="lessons/12-troubleshoot.html">12. Troubleshooting checklist</a>
+    <div class="nav-level">Novice</div>
+    <a class="" data-id="13-package-types" href="lessons/13-package-types.html">13. Flatpak vs apt vs Snap</a>
+    <a class="" data-id="14-gaming" href="lessons/14-gaming.html">14. Steam + Proton / gaming intro</a>
+    <a class="" data-id="15-permissions" href="lessons/15-permissions.html">15. Permissions, users, Disks overview</a>
+    <a class="" data-id="16-customize" href="lessons/16-customize.html">16. Customizing look</a>
+    <a class="" data-id="17-next-steps" href="lessons/17-next-steps.html">17. Next steps / learning path</a>
+  </nav>
+  <div class="sidebar-footer">Developed by Bill Foster<br>Offline-friendly · relative paths<br>Progress saved in this browser</div>
+</aside>
+<main class="main">
+  <div class="top-actions">
+    <a class="btn-ghost btn" href="index.html">Home</a>
+    <button type="button" class="btn-ghost btn" onclick="UFZ.toggleTheme()">Light / Dark</button>
+  </div>
+
+  <section class="hero">
+    <h1>Ubuntu From Zero</h1>
+    <p class="tagline">Friendly Ubuntu lessons for Windows switchers — pics, short video slots, and a matching desktop app.</p>
+    <p class="byline-main">Developed by Bill Foster</p>
+    <figure class="figure">
+      <img src="../media/images/hero-ubuntu.png" alt="Ubuntu From Zero hero">
+      <figcaption>Real desktop capture from Bill’s Ubuntu setup.</figcaption>
+    </figure>
+    <div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar"></div></div>
+    <p class="progress-label" id="progress-label">0 of 17 lessons completed</p>
+    <p style="margin-top:1rem">
+      <button type="button" class="btn-ghost btn" onclick="UFZ.resetProgress()">Reset progress</button>
+    </p>
+  </section>
+  <h2>Start by level</h2>
+  <div class="level-cards">
+      <a class="level-card" href="lessons/01-welcome.html">
+        <h3>Beginner</h3>
+        <p>Desktop, files, apps, updates, network, screenshots</p>
+        <div class="count">Lessons 1–7 · 7 topics</div>
+      </a>
+      <a class="level-card" href="lessons/08-terminal.html">
+        <h3>Getting comfortable</h3>
+        <p>Terminal, sudo, everyday apps, backups, troubleshooting</p>
+        <div class="count">Lessons 8–12 · 5 topics</div>
+      </a>
+      <a class="level-card" href="lessons/13-package-types.html">
+        <h3>Novice</h3>
+        <p>Packages, gaming, disks, customization, next steps</p>
+        <div class="count">Lessons 13–17 · 5 topics</div>
+      </a>
+  </div>
+  <h2>All lessons</h2>
+  <ol>
+      <li><a href="lessons/01-welcome.html"><strong>1.</strong> Welcome &amp; what Ubuntu is</a> — A friendly intro to Ubuntu for Windows users — what it is, how it feels familiar, and what is different.</li>
+      <li><a href="lessons/02-desktop.html"><strong>2.</strong> Desktop tour</a> — Activities, the dock, the top bar, and Settings — your GNOME map.</li>
+      <li><a href="lessons/03-files.html"><strong>3.</strong> Files app &amp; folders</a> — Home, Downloads, Trash, and how folders work on Ubuntu.</li>
+      <li><a href="lessons/04-install-apps.html"><strong>4.</strong> Installing apps</a> — App Center / Software, and a gentle intro to Flatpak and Flathub.</li>
+      <li><a href="lessons/05-updates.html"><strong>5.</strong> Updates</a> — Keep Ubuntu healthy with Software Updater and a gentle apt intro.</li>
+      <li><a href="lessons/06-wifi-bt-display.html"><strong>6.</strong> Wi‑Fi, Bluetooth, displays</a> — Connect to networks, pair devices, and set resolution / scaling.</li>
+      <li><a href="lessons/07-screenshots.html"><strong>7.</strong> Screenshots, clipboard, shortcuts</a> — Capture the screen, copy-paste habits, and everyday keyboard shortcuts.</li>
+      <li><a href="lessons/08-terminal.html"><strong>8.</strong> Terminal basics</a> — pwd, ls, cd, and copy-paste — enough to follow guides without fear.</li>
+      <li><a href="lessons/09-sudo.html"><strong>9.</strong> Safe vs sudo / password prompts</a> — When Ubuntu asks for your password, what sudo means, and how to stay safe.</li>
+      <li><a href="lessons/10-browser-email.html"><strong>10.</strong> Browser, email, printers</a> — Firefox (and friends), webmail or Thunderbird, and adding a printer.</li>
+      <li><a href="lessons/11-backups.html"><strong>11.</strong> Backups</a> — Timeshift for system snapshots and a simple “copy important files” habit.</li>
+      <li><a href="lessons/12-troubleshoot.html"><strong>12.</strong> Troubleshooting checklist</a> — No internet, stuck updates, and slow boot — calm first steps.</li>
+      <li><a href="lessons/13-package-types.html"><strong>13.</strong> Flatpak vs apt vs Snap</a> — Three common ways software is packaged on Ubuntu — when to use which.</li>
+      <li><a href="lessons/14-gaming.html"><strong>14.</strong> Steam + Proton / gaming intro</a> — Install Steam, enable Proton, and set expectations for Windows games on Ubuntu.</li>
+      <li><a href="lessons/15-permissions.html"><strong>15.</strong> Permissions, users, Disks overview</a> — Read/write/execute in plain English, extra users, and the Disks utility.</li>
+      <li><a href="lessons/16-customize.html"><strong>16.</strong> Customizing look</a> — Appearance, wallpaper, accents — including dark Yaru with an orange accent tip.</li>
+      <li><a href="lessons/17-next-steps.html"><strong>17.</strong> Next steps / learning path</a> — Where to go after these 17 lessons — practice projects and trusted resources.</li>
+  </ol>
+  <div class="tip"><strong>How to use</strong> Work top to bottom. Mark lessons done at the bottom of each page. Open this folder offline — all links are relative. Pair with the Tkinter app (<code>run.sh</code>) for quick search.</div>
+
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

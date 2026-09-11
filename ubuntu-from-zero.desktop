@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ubuntu From Zero
+GenericName=Ubuntu tutorial
+Comment=Developed by Bill Foster — beginner to novice Ubuntu tutorial
+Exec=/home/billf195/Apps/ubuntu-from-zero/run.sh
+Path=/home/billf195/Apps/ubuntu-from-zero
+Icon=help-contents
+Terminal=false
+Categories=Education;Utility;
+StartupNotify=true

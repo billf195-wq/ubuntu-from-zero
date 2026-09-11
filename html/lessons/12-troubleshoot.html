@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting checklist — Ubuntu From Zero</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Ubuntu <span>From Zero</span></h1>
+    <p>Beginner → novice tutorial</p>
+    <p class="byline">Developed by Bill Foster</p>
+  </div>
+  <div class="search-wrap">
+    <input type="search" id="lesson-search" placeholder="Search lessons…" aria-label="Search lessons">
+  </div>
+  <nav class="nav">
+    <div class="nav-level">Beginner</div>
+    <a class="" data-id="01-welcome" href="01-welcome.html">1. Welcome &amp; what Ubuntu is</a>
+    <a class="" data-id="02-desktop" href="02-desktop.html">2. Desktop tour</a>
+    <a class="" data-id="03-files" href="03-files.html">3. Files app &amp; folders</a>
+    <a class="" data-id="04-install-apps" href="04-install-apps.html">4. Installing apps</a>
+    <a class="" data-id="05-updates" href="05-updates.html">5. Updates</a>
+    <a class="" data-id="06-wifi-bt-display" href="06-wifi-bt-display.html">6. Wi‑Fi, Bluetooth, displays</a>
+    <a class="" data-id="07-screenshots" href="07-screenshots.html">7. Screenshots, clipboard, shortcuts</a>
+    <div class="nav-level">Getting comfortable</div>
+    <a class="" data-id="08-terminal" href="08-terminal.html">8. Terminal basics</a>
+    <a class="" data-id="09-sudo" href="09-sudo.html">9. Safe vs sudo / password prompts</a>
+    <a class="" data-id="10-browser-email" href="10-browser-email.html">10. Browser, email, printers</a>
+    <a class="" data-id="11-backups" href="11-backups.html">11. Backups</a>
+    <a class="active" data-id="12-troubleshoot" href="12-troubleshoot.html">12. Troubleshooting checklist</a>
+    <div class="nav-level">Novice</div>
+    <a class="" data-id="13-package-types" href="13-package-types.html">13. Flatpak vs apt vs Snap</a>
+    <a class="" data-id="14-gaming" href="14-gaming.html">14. Steam + Proton / gaming intro</a>
+    <a class="" data-id="15-permissions" href="15-permissions.html">15. Permissions, users, Disks overview</a>
+    <a class="" data-id="16-customize" href="16-customize.html">16. Customizing look</a>
+    <a class="" data-id="17-next-steps" href="17-next-steps.html">17. Next steps / learning path</a>
+  </nav>
+  <div class="sidebar-footer">Developed by Bill Foster<br>Offline-friendly · relative paths<br>Progress saved in this browser</div>
+</aside>
+<main class="main">
+  <div class="top-actions">
+    <a class="btn-ghost btn" href="../index.html">Home</a>
+    <button type="button" class="btn-ghost btn" onclick="UFZ.toggleTheme()">Light / Dark</button>
+  </div>
+
+  <header class="lesson-header">
+    <div class="meta">
+      <span class="badge comfortable">Getting comfortable</span>
+      <span>Lesson 12 of 17</span>
+    </div>
+    <h1>Troubleshooting checklist</h1>
+    <p class="summary">No internet, stuck updates, and slow boot — calm first steps.</p>
+  </header>
+  <figure class="figure">
+    <img src="../../media/images/12-troubleshoot.png" alt="Troubleshooting checklist">
+    <figcaption>Lesson cover — replace <code>media/images/12-troubleshoot.png</code> with a GTR capture when ready.</figcaption>
+  </figure>
+  <figure class="figure">
+    <img src="../../media/images/checklist.png" alt="Troubleshooting checklist">
+    <figcaption>Troubleshooting checklist</figcaption>
+  </figure>
+
+  <h2>Steps</h2>
+  <ol class="steps">
+    <li>Stay calm. Write down what changed last (new app, update, cable).</li>
+    <li>No internet: toggle airplane mode, reconnect Wi‑Fi, try Ethernet, reboot the router, check Settings → Network.</li>
+    <li>Stuck update: wait a few minutes; check if Software Updater is waiting for a password behind another window. Reboot and retry. Avoid force-killing dpkg unless a trusted guide says so.</li>
+    <li>Slow boot: note whether it is firmware, disk, or login. Free disk space in Home; disable unneeded startup apps in Settings → Apps → Startup.</li>
+  </ol>
+  
+<ul class="checklist">
+  <li>Reproduce the problem once more — same every time?</li>
+  <li>Reboot once (save work first)</li>
+  <li>Check cables / Wi‑Fi password / airplane mode</li>
+  <li>Free space: Files → Home → Properties; aim for several GB free</li>
+  <li>Recent change: uninstall the last new app and retest</li>
+  <li>Updates: run Software Updater</li>
+  <li>Search the exact error text + “Ubuntu 24.04” or “26.04”</li>
+</ul>
+<div class="info"><strong>Logs (later)</strong> When you are ready, <code>journalctl -b -p err</code> shows serious errors from this boot — advanced, but good to know exists.</div>
+
+  <div class="mark-done">
+    <button type="button" class="btn" id="mark-done-btn" data-id="12-troubleshoot" onclick="UFZ.markDone('12-troubleshoot')">Mark lesson done</button>
+  </div>
+  <nav class="nav-lessons">
+    <a class="btn btn-ghost" href="11-backups.html">← 11. Backups</a>
+    <a class="btn" href="13-package-types.html">13. Flatpak vs apt vs Snap →</a>
+  </nav>
+
+</main>
+<script src="../js/app.js"></script>
+</body>
+</html>

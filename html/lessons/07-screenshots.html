@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screenshots, clipboard, shortcuts — Ubuntu From Zero</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+<aside class="sidebar">
+  <div class="brand">
+    <h1>Ubuntu <span>From Zero</span></h1>
+    <p>Beginner → novice tutorial</p>
+    <p class="byline">Developed by Bill Foster</p>
+  </div>
+  <div class="search-wrap">
+    <input type="search" id="lesson-search" placeholder="Search lessons…" aria-label="Search lessons">
+  </div>
+  <nav class="nav">
+    <div class="nav-level">Beginner</div>
+    <a class="" data-id="01-welcome" href="01-welcome.html">1. Welcome &amp; what Ubuntu is</a>
+    <a class="" data-id="02-desktop" href="02-desktop.html">2. Desktop tour</a>
+    <a class="" data-id="03-files" href="03-files.html">3. Files app &amp; folders</a>
+    <a class="" data-id="04-install-apps" href="04-install-apps.html">4. Installing apps</a>
+    <a class="" data-id="05-updates" href="05-updates.html">5. Updates</a>
+    <a class="" data-id="06-wifi-bt-display" href="06-wifi-bt-display.html">6. Wi‑Fi, Bluetooth, displays</a>
+    <a class="active" data-id="07-screenshots" href="07-screenshots.html">7. Screenshots, clipboard, shortcuts</a>
+    <div class="nav-level">Getting comfortable</div>
+    <a class="" data-id="08-terminal" href="08-terminal.html">8. Terminal basics</a>
+    <a class="" data-id="09-sudo" href="09-sudo.html">9. Safe vs sudo / password prompts</a>
+    <a class="" data-id="10-browser-email" href="10-browser-email.html">10. Browser, email, printers</a>
+    <a class="" data-id="11-backups" href="11-backups.html">11. Backups</a>
+    <a class="" data-id="12-troubleshoot" href="12-troubleshoot.html">12. Troubleshooting checklist</a>
+    <div class="nav-level">Novice</div>
+    <a class="" data-id="13-package-types" href="13-package-types.html">13. Flatpak vs apt vs Snap</a>
+    <a class="" data-id="14-gaming" href="14-gaming.html">14. Steam + Proton / gaming intro</a>
+    <a class="" data-id="15-permissions" href="15-permissions.html">15. Permissions, users, Disks overview</a>
+    <a class="" data-id="16-customize" href="16-customize.html">16. Customizing look</a>
+    <a class="" data-id="17-next-steps" href="17-next-steps.html">17. Next steps / learning path</a>
+  </nav>
+  <div class="sidebar-footer">Developed by Bill Foster<br>Offline-friendly · relative paths<br>Progress saved in this browser</div>
+</aside>
+<main class="main">
+  <div class="top-actions">
+    <a class="btn-ghost btn" href="../index.html">Home</a>
+    <button type="button" class="btn-ghost btn" onclick="UFZ.toggleTheme()">Light / Dark</button>
+  </div>
+
+  <header class="lesson-header">
+    <div class="meta">
+      <span class="badge beginner">Beginner</span>
+      <span>Lesson 7 of 17</span>
+    </div>
+    <h1>Screenshots, clipboard, shortcuts</h1>
+    <p class="summary">Capture the screen, copy-paste habits, and everyday keyboard shortcuts.</p>
+  </header>
+  <figure class="figure">
+    <img src="../../media/images/07-screenshots.png" alt="Screenshots, clipboard, shortcuts">
+    <figcaption>Lesson cover — replace <code>media/images/07-screenshots.png</code> with a GTR capture when ready.</figcaption>
+  </figure>
+  <figure class="figure">
+    <img src="../../media/images/screenshot-tool.png" alt="GNOME screenshot / screen tool">
+    <figcaption>GNOME screenshot / screen tool</figcaption>
+  </figure>
+
+  <h2>Steps</h2>
+  <ol class="steps">
+    <li>Press Print Screen (PrtSc) to open the screenshot UI. Choose screen, window, or selection. Save or copy to clipboard.</li>
+    <li>On many Ubuntu GNOME setups, Shift+PrtSc or the screenshot app also works — try PrtSc first.</li>
+    <li>Clipboard: Ctrl+C copy, Ctrl+V paste, Ctrl+X cut — same as Windows in most apps.</li>
+    <li>Learn a few shortcuts below; they save a lot of mouse travel.</li>
+  </ol>
+  
+<h2>Handy shortcuts</h2>
+<ul>
+  <li><strong>Super</strong> — Activities overview</li>
+  <li><strong>Alt+Tab</strong> — switch windows</li>
+  <li><strong>Super+Left / Super+Right</strong> — tile window to half screen</li>
+  <li><strong>Ctrl+Alt+T</strong> — open Terminal (very common)</li>
+  <li><strong>Ctrl+L</strong> in Files — type a path</li>
+  <li><strong>Ctrl+H</strong> in Files — show hidden files</li>
+</ul>
+<div class="info"><strong>Terminal paste</strong> In the Terminal, paste is often Ctrl+Shift+V (because Ctrl+V means something else in terminals). Lesson 8 covers this.</div>
+
+  <div class="mark-done">
+    <button type="button" class="btn" id="mark-done-btn" data-id="07-screenshots" onclick="UFZ.markDone('07-screenshots')">Mark lesson done</button>
+  </div>
+  <nav class="nav-lessons">
+    <a class="btn btn-ghost" href="06-wifi-bt-display.html">← 6. Wi‑Fi, Bluetooth, displays</a>
+    <a class="btn" href="08-terminal.html">8. Terminal basics →</a>
+  </nav>
+
+</main>
+<script src="../js/app.js"></script>
+</body>
+</html>
